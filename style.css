@@ -100,6 +100,7 @@ p {
     height: 40px;
     width: 40px;
     top: 1.5%;
+    left: -50px;
     position:fixed;
     animation: moveBallRight 1.13s;
     animation-fill-mode: forwards;
@@ -110,7 +111,7 @@ p {
 .moverActiveLeft {
     height: 40px;
     width: 40px;
-    left: 89vw;
+    left: 98vw;
     top: 1.5%;
     position: absolute;
     animation: moveBallLeft 1.13s;
@@ -138,19 +139,20 @@ p {
 
 @keyframes moveBallLeft {
     100% {
-        transform: translateX(-88vw)
+        transform: translateX(-96.5vw)
     }
 }
 
 @keyframes moveBallRight {
     100% {
-        transform: translateX(85vw)
+        transform: translateX(100vw)
     }
 }
 
 #menu {
     height: 100vh;
-    width: 30vw;
+    width: 400px;
+    max-width: 80vw;
     top: 0;
     position: fixed;
     background-color:#9c6c6c;
@@ -172,6 +174,7 @@ p {
     top: 0;
     left: 0;
     position: fixed;
+    
 }
 
 .moveMenuLeft {
@@ -224,4 +227,20 @@ p {
     100% {
         transform: translateX(-100%);
     }
+}
+#wds {
+   position: absolute;
+   max-width: 100vw;
+   height: 100vh;
+}
+.empty {
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+#waka {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
 }
