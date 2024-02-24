@@ -154,6 +154,7 @@ p {
     width: 400px;
     max-width: 80vw;
     top: 0;
+    /* left: 0px; */
     position: fixed;
     background-color:#9c6c6c;
 }
@@ -162,7 +163,7 @@ p {
     height: 100vh;
     width: 30vw;
     top: 0;
-    left: -50%;
+    left: -400px;
     position: fixed;
     background-color: #9c6c6c;
 }
@@ -172,7 +173,7 @@ p {
     width: 30vw;
     animation: moveMenuRight 1.13s;
     top: 0;
-    left: 0;
+    left: 0px;
     position: fixed;
     
 }
