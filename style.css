@@ -244,8 +244,30 @@ p {
     top: 0;
     left: 0;
     outline: none;
+    z-index: 2;
+    background: 0
 }
 .rot {
     width: 100vw;
     height: 100vh;
+}
+/* #dds {
+    width: 100%;
+    height: 100%;
+} */
+.fishka {
+    width: 40vw;
+    max-width: fit-content;
+    height: 40vh;
+    max-height: fit-content;
+}
+.fish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: -2%;
+    width: 100%;
+    height: 100%;
 }
