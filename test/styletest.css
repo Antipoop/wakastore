@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+.d0 {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+}
+.d1 {
+    width: 10%;
+    height: 100%;
+    background-color: red;
+}
+.d2_1 {
+    width: 10%;
+    height: 100%;
+    background-color: black;
+}
+.d2 {
+    width: 60%;
+    height: 100%;
+    background-color: green;
+}
+.d3 {
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}

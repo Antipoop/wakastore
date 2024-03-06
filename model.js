@@ -3,7 +3,7 @@ const container = document.getElementById('wds');
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 20;
 camera.position.y = 0;
 
@@ -13,6 +13,7 @@ let aspectRatio = widthd / height;
 
 const renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
 renderer.setClearColor(0x000000, 0);
+console.log(window.innerWidth, window.innerHeight);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 window.addEventListener('resize', () => {

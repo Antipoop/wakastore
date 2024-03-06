@@ -14,10 +14,17 @@
 </head>
  
 <body>
-    <div class="fish">
-        <img class="fishka" src="images/ddd.png">
+    <div class="circles">
+        <img id="circleLeft" src="images/circle2.png">
+        <img id="circleRight" src="images/circle2.png">
     </div>
-  <div id="wds">
+    <section class="sec" id="sec1">
+        <div style="position: fixed;">
+            <div class="fish">
+        <img class="fishka" src="images/ddd.png">
+        <input class="buy" type="image" src="images/buy.png">
+    </div>
+    <div id="wds">
     <div id="2ds"></div>
     <canvas class="empty"></canvas>
     <script>
@@ -26,7 +33,7 @@ const container = document.getElementById('wds');
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(25, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 20;
 camera.position.y = 0;
 
@@ -124,16 +131,32 @@ window.addEventListener('touchend', (event) => {
 })
     </script>
   </div>
+        </div>
+
+    </section>
+    <section class="sec" id="sec2">
+        <div class="second">
+
+        </div>
+    </section>
+    
+  
+        <input id="btn2" class="button2" type="image" src="images/i.png" onclick="closeMenu()" value="Click">
+        <input id="ee" class="ee" type="image" src="images/burger.png" onclick="openMenu()" value="Click">
+        <img src="images/i2.png" class="brown">
+        <h1 id="wakastore">wakastore</h1>
+
+<!-- <h1 id="wakastore">wakastore</h1>
   <input id="ee" class="ee" type="image" src="images/burger.png" onclick="openMenu()" value="Click">
-  <div id="mover" class="moverNotActive">
+    <div id="mover" class="moverNotActive">
     <img src="images/i2.png" id="logoBrown" class="logoBrownNotActive">
     <img src="images/i.png" id="logoWhite" class="logoWhiteNotActive">
-  </div>
   <input id="btn2" class="button2" type="image" src="images/i.png" onclick="closeMenu()" value="Click">
+  </div> -->
+  
+  
   <div id="menu" class="menu1">
-    <!-- <ul id="menu">
-        
-    </ul> -->
+    <input type="image" src="images/i.png" class="white" onclick="closeMenu()">
   </div>
 </body>
 </html>
