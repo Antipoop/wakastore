@@ -14,3 +14,9 @@ function closeMenu() {
   document.getElementById('logoBrown').className = 'logoBrownActiveRight'
   document.getElementById('ee').className = 'ee' 
 }
+function openBuy() {
+  document.getElementById('containerNotActive').id = 'tg'
+}
+function closeBuy() {
+  document.getElementById('tg').id = 'containerNotActive'
+}
