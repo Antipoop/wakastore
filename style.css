@@ -358,12 +358,110 @@ body {
     height: 100vh;
     position: static;
 }
-#sec2 {
-   
-}
+
 .second {
     position: relative;
     background: #e2e2e2;
     width: 100vw;
     height: 100vh;
+}
+.g0 {
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    
+    top: 20%;
+    position: absolute;
+}
+.g1 {
+    width: 20%;
+    max-width: 250px;
+    min-width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.g2 {
+    width: 20%;
+    max-width: 250px;
+    min-width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.g3 {
+    width: 20%;
+    max-width: 250px;
+    min-width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.g4 {
+    width: 20%;
+    max-width: 250px;
+    min-width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.g5 {
+    width: 20%;
+    max-width: 250px;
+    min-width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.g6 {
+    width: 20%;
+    max-width: 250px;
+    min-width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.g7 {
+    width: 20%;
+    max-width: 250px;
+    min-width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+.good {
+    width: 100%;
+}
+.choose {
+    width: 666px;
+    max-width: 65%;
+    bottom: 103%;
+    z-index: 100;
+    background: 0;
+    position: absolute;
+    top: auto;
+    opacity: 52%;
+}
+.divbtnBuy {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    top: -59px;
+    background: 0;
+    text-align: left;
+}
+.btnbuy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+
 }

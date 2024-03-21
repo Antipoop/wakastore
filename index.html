@@ -22,8 +22,23 @@
         <div style="position: fixed;">
             <div class="fish">
         <img class="fishka" src="images/ddd.png">
-        <input class="buy" type="image" src="images/buy.png">
+        
     </div>
+    <form class="form" method="post" action="./send.php" style="top: 300px;
+    position: absolute; left: 300px;
+    z-index: 10;">
+        <div class="form__item">
+            <input class="form__input" type="text" name="name" required>
+            <label class="form__label">Ваше имя</label>
+        </div>
+        <div class="form__item">
+            <input class="form__input" type="text" name="phone" required>
+            <label class="form__label">Номер телефона</label>
+        </div>
+        <input class="form__input btn" type="submit" value="Отправить">
+        <input type="hidden" name="act" value="order">
+        
+    </form>
     <div id="wds">
     <div id="2ds"></div>
     <canvas class="empty"></canvas>
@@ -130,13 +145,57 @@ window.addEventListener('touchend', (event) => {
     } )
 })
     </script>
+    <div style="width: 100vw; background: 0; position: absolute; display: inline-block; text-align: center; left: -123px;">
+        <input class="buy" type="image" src="images/buy.png">
+    </div>
+    
   </div>
         </div>
 
     </section>
     <section class="sec" id="sec2">
+        
         <div class="second">
-
+            
+            <div class="g0">
+                
+                <div class="g1">
+                    
+                    
+                    <img src="images/choose.png" class="choose">
+                    <img src="images/goods/BerryMix.png" class="good">
+                    <div class="divbtnBuy"><input type="image" class="btnbuy"></div>
+                </div>
+                <div class="g2">
+                    <img src="images/goods/grapeApple.png" class="good">
+                    <div class="divbtnBuy"><input type="image" class="btnbuy"></div>
+                </div>
+                <div class="g3">
+                    <img src="images/goods/kiwiMaraquaguava.png" class="good">
+                    <div class="divbtnBuy"><input type="image" class="btnbuy"></div>
+                </div>
+                <div class="g4">
+                    <img src="images/goods/Lichi.png" class="good">
+                    <div class="divbtnBuy"><input type="image" class="btnbuy"></div>
+                </div> 
+        </div>
+    </section>
+    <section class="sec" id="sec3">
+        <div class="second">
+            <div class="g0">
+                <div class="g5">
+                    <img src="images/choose.png" class="choose">
+                    <img src="images/goods/rasberryGuava.png" class="good">
+                    <div class="divbtnBuy"><input type="image" class="btnbuy"></div>
+                </div>
+                <div class="g6">
+                    <img src="images/goods/strawberryKiwi.png" class="good">
+                    <div class="divbtnBuy"><input type="image" class="btnbuy"></div>
+                </div>
+                <div class="g7">
+                    <img src="images/goods/watermelonRasberry.png" class="good">
+                    <div class="divbtnBuy"><input type="image" class="btnbuy"></div>
+                </div> 
         </div>
     </section>
     
