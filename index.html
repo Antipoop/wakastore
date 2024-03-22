@@ -6,7 +6,7 @@
           content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Spinning Ball Animation</title>
+    <title>WakaStore</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" > </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
@@ -19,53 +19,27 @@
         <img id="circleRight" src="images/circle2.png">
     </div>
     <section class="sec" id="sec1">
-        <form id="containerNotActive" class="openBuy">
+        <form id="tg" class="containerNotActive">
             <input class="close" type="image" src="images/cls.png" onclick="closeBuy()">
-            <!-- <div class="containerName">
-                <label class="form-label">Имя:</label>
-                <input type="text" name="name" class="form-control">
-            </div>
-            <div class="containerTg">
-                <label class="form-label">Telegram:</label>
-                <input type="text" name="email" class="form-control">
-            </div> -->
-            <input type="text" name="tg" class="question" id="nme" required autocomplete="off" />
+            <input type="text" name="tg" class="question" id="nme" value="@" autocomplete="off" />
             <label for="nme" class="nameTgla">
                 <span class="nameTgsp">Telegram</span>
             </label>
             <div class="container1">
                 <ul class="ks-cboxtags">
-                  <li><input class="tastebtn" type="checkbox" id="checkboxOne" value="Rainbow Dash"><label for="checkboxOne">Ягодный микс</label></li>
-                  <li><input class="tastebtn" type="checkbox" id="checkboxTwo" value="Cotton Candy"><label for="checkboxTwo">Виноград яблоко</label></li>
-                  <li><input class="tastebtn" type="checkbox" id="checkboxThree" value="Rarity"><label for="checkboxThree">Киви маракуя гуава</label></li>
-                  <li><input class="tastebtn" type="checkbox" id="checkboxFour" value="Moondancer"><label for="checkboxFour">Личи</label></li>
-                  <li><input class="tastebtn" type="checkbox" id="checkboxFive" value="Surprise"><label for="checkboxFive">Гуава малина</label></li>
-                  <li><input class="tastebtn" type="checkbox" id="checkboxSix" value="Twilight Sparkle"><label for="checkboxSix">Клубника киви</label></li>
-                  <li><input class="tastebtn" type="checkbox" id="checkboxSeven" value="Fluttershy"><label for="checkboxSeven">Малина арбуз</label></li>
+                  <li><input name="vks1" class="tastebtn" type="checkbox" id="checkboxOne" value="Ягодный микс"><label for="checkboxOne">Ягодный микс</label></li>
+                  <li><input name="vks2" class="tastebtn" type="checkbox" id="checkboxTwo" value="Виноград яблоко"><label for="checkboxTwo">Виноград яблоко</label></li>
+                  <li><input name="vks3" class="tastebtn" type="checkbox" id="checkboxThree" value="Киви маракуя гуава"><label for="checkboxThree">Киви маракуя гуава</label></li>
+                  <li><input name="vks4" class="tastebtn" type="checkbox" id="checkboxFour" value="Личи"><label for="checkboxFour">Личи</label></li>
+                  <li><input name="vks5" class="tastebtn" type="checkbox" id="checkboxFive" value="Гуава малина"><label for="checkboxFive">Гуава малина</label></li>
+                  <li><input name="vks6" class="tastebtn" type="checkbox" id="checkboxSix" value="Клубника киви"><label for="checkboxSix">Клубника киви</label></li>
+                  <li><input name="vks7" class="tastebtn" type="checkbox" id="checkboxSeven" value="Малина арбуз"><label for="checkboxSeven">Малина арбуз</label></li>
                 </ul>  
             </div>
-              <button class="sub" type="submit">buy</button>
+              <button class="sub" type="submit" onclick="buy()">buy</button>
             <!-- <button type="submit">Отправить</button> -->
         </form>
         <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-            <script>
-                const token = "7140639067:AAFztrUwiz-EJL_0CqxSOt4xL52eELUg-sw";
-                const chatId = "-4117816437";
-                const urlApi = `https://api.telegram.org/bot${ token }/sendMessage`;
-
-                document.getElementById('tg').addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    let message = `<b>Заявка с сайта</b>\n`;
-                    message += `<b>Телега: </b> ${ this.tg.value }\n`;
-                    message += `<b>Позиции: </b> ${ this.email.value }`;
-                    
-                    axios.post(urlApi, {
-                        chat_id: chatId,
-                        parse_mode: 'html',
-                        text: message
-                    })
-                })
-            </script>
         <div style="position: fixed;">
             <div class="fish">
         <img class="fishka" src="images/ddd.png">
