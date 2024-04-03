@@ -22,6 +22,15 @@ function closeBuy() {
   event.preventDefault();
   document.getElementById('tg').className = 'containerNotActive'
 }
+function openThanks() {
+  document.getElementById('thanks').className = 'divth1'
+}
+function closeThanks() {
+  document.getElementById('thanks').className = 'divth2'
+}
+function closeAge() {
+  document.getElementById('age').className = 'closeAge'
+}
 
 
 function buy() {
@@ -43,9 +52,16 @@ function buy() {
                         }
                       }
                     }
+                    let name = this.name.value;
+                    let number = this.number.value;
+                    // console.log(this.name.value)
                     let message = `<b>Заказ</b>\n`;
+                    message += `<b>Имя: </b> ${ name }\n`;
+                    this.name.value = '';
                     message += `<b>Телега: </b> ${ mail }\n`;
-                    this.tg.value = ''
+                    this.tg.value = '';
+                    message += `<b>Номер: </b> ${number}\n`;
+                    this.number.value = '';
                     message += `<b>Позиции: </b>`
                     if (document.getElementById('checkboxOne').checked === true) {
                       message += `${ this.vks1.value }\n`;
@@ -68,7 +84,8 @@ function buy() {
                     if (document.getElementById('checkboxSeven').checked === true) {
                       message += `${ this.vks7.value }`;
                     }
-                    
+                    closeBuy()
+                    openThanks()
                     axios.post(urlApi, {
                         chat_id: chatId,
                         parse_mode: 'html',
