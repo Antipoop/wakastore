@@ -497,13 +497,12 @@ body {
 .container1 {
     font-family: 'inter';
     background: 0;
-    top: 13vh;
     position: relative;
     text-align: left;
     width: 600px;
     max-width: 90%;
     font-size: large;
-    height: 13vh;
+    height: 24vh;
     display: inline-block;
 }
 
@@ -550,11 +549,12 @@ h1 {
   
   input.question,
   textarea.question {
-    top: 12vh;
     font-size: 22px;
     font-weight: 300;
     border-radius: 2px;
     margin: 0;
+    margin-bottom: 20px;
+    margin-top: 5px;
     border: none;
     width: 600px;
     max-width: 90%;
@@ -613,12 +613,13 @@ h1 {
     position: relative;
     max-width: 90%;
     width: 600px;
-    height: 30%;
+    height: 6vh;
     border-radius: 10px;
     border: 0;
     cursor: pointer;
     background: #9c6c6c;
     font-family: 'baloo';
+    font-size: x-large;
     color: #e2e2e2;
     box-shadow: inset 0px 11px 5px -7px #2d2d2d7a;
   }
@@ -654,7 +655,6 @@ h1 {
     background: 0;
 }
 .nameTgla {
-    top: -25px;
     position: relative;
     width: 600px;
     max-width: 90%;

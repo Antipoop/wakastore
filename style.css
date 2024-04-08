@@ -1,5 +1,5 @@
 p {
-    color: #9c6c6c;
+    color: #895d5d;
 }
 * {
     background-color: #e2e2e2;
@@ -482,9 +482,9 @@ body {
     background: grey;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.192);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.392);
+        backdrop-filter: blur(17px);
+        -webkit-backdrop-filter: blur(17px);
 }
 
 .containerName {
@@ -495,15 +495,14 @@ body {
 }
 
 .container1 {
-    font-family: 'inter';
+    font-family: 'interr';
     background: 0;
-    top: 13vh;
     position: relative;
     text-align: left;
     width: 600px;
     max-width: 90%;
     font-size: large;
-    height: 13vh;
+    height: 24vh;
     display: inline-block;
 }
 
@@ -519,7 +518,7 @@ body {
 
 label {
     background: 0;
-    color: #9c6c6c;
+    color: #895d5d;
 }
 
 h1 {
@@ -528,7 +527,7 @@ h1 {
   }
   
 .nameTgsp {
-    font-family: 'inter';
+    font-family: 'interr';
     margin: 10px;
     margin-left: 0;
     padding: 5px;
@@ -550,11 +549,12 @@ h1 {
   
   input.question,
   textarea.question {
-    top: 12vh;
     font-size: 22px;
     font-weight: 300;
     border-radius: 2px;
     margin: 0;
+    margin-bottom: 20px;
+    margin-top: 5px;
     border: none;
     width: 600px;
     max-width: 90%;
@@ -566,7 +566,7 @@ h1 {
   input.question {
     border: 1.7px solid #ccc;
     box-shadow: inset 0px 14px 20px -15px #606060;
-    border-radius: 10px;
+    border-radius: 9px;
     background: #FFFFFF;
   }
   
@@ -613,12 +613,13 @@ h1 {
     position: relative;
     max-width: 90%;
     width: 600px;
-    height: 30%;
-    border-radius: 10px;
+    height: 6vh;
+    border-radius: 9px;
     border: 0;
     cursor: pointer;
     background: #9c6c6c;
-    font-family: 'baloo';
+    font-family: 'interr';
+    font-size: large;
     color: #e2e2e2;
     box-shadow: inset 0px 11px 5px -7px #2d2d2d7a;
   }
@@ -646,7 +647,7 @@ h1 {
     height: 20%;
     width: 100%;
     margin: 0;
-    z-index: -1;
+    
 }
 .chexboxes {
     width: 100vw;
@@ -654,7 +655,6 @@ h1 {
     background: 0;
 }
 .nameTgla {
-    top: -25px;
     position: relative;
     width: 600px;
     max-width: 90%;
@@ -673,12 +673,12 @@ h1 {
     position: relative;
     top: auto;
     font-size: xxx-large;
-    color: #9c6c6c;
+    color: #895d5d;
 }
 #or {
     background: 0;
     text-align: left;
-    font-family: 'baloo';
+    font-family: 'interr';
     display: inline-block;
     width: 600px;
     max-width: 90%;
@@ -704,7 +704,7 @@ h1 {
     outline: none;
     cursor: pointer;
     box-shadow: inset 0px 17px 13px -19px #3f3f3f;
-    border: 1.7px solid #d4d4d4;
+    border: 1px solid #d4d4d4;
 }
 .tastebtn:checked {
     width: 1.3rem;
@@ -789,9 +789,9 @@ h1 {
     background: grey;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.192);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.392);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
 }
 .divth2 {
     display: none;
@@ -803,9 +803,9 @@ h1 {
     background: grey;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.192);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.392);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
 }
 .closeAge {
     display: none;

@@ -35,27 +35,32 @@
             
             
             <input class="close" type="image" src="images/cls.png" onclick="closeBuy()">
-            <input placeholder="Your name" type="text" name="name" class="question" id="nme" autocomplete="off" />
-            <p class ="chexboxes" style="top: 7vh; position: relative; margin: 0;">
+            <div style="display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            background: 0;
+            top: 9vh;">
+                <p class ="chexboxes" style="position: relative; margin: 0;">
                 <label for="nme" class="nameTgla">
                 <span class="nameTgsp">Name</span>
             </label>       
             </p>
+                <input placeholder="Your name" type="text" name="name" class="question" id="nme" autocomplete="off" />
             
-            <input placeholder="@name" style="top: 13vh;" type="text" name="tg" class="question" id="nme" autocomplete="off" />
-            <p class ="chexboxes" style="top: 8.1vh; position: relative; margin: 0;">
+            <p class ="chexboxes" style="position: relative; margin: 0;">
                 <label for="nme" class="nameTgla">
                 <span class="nameTgsp">Telegram ID</span>
             </label>
             </p>
+            <input placeholder="@name" type="text" name="tg" class="question" id="nme" autocomplete="off" />
             
-            <input placeholder="+7 (XXX) xxx-xx-xx" style="top: 14vh;" type="text" name="number" class="question" id="nme" autocomplete="off" />
-            <p class ="chexboxes" style="top: 8.8vh; position: relative; margin: 0;">
+            <p class ="chexboxes" style="position: relative; margin: 0;">
                 <label for="nme" class="nameTgla">
                 <span class="nameTgsp">Phone Number</span>
             </label>      
             </p>
-            
+            <input placeholder="+7 (XXX) xxx-xx-xx" type="text" name="number" class="question" id="nme" autocomplete="off" />
             <div class="container1">
                 <p style="margin: 0; background: 0;">Taste</p>
                 <ul class="ks-cboxtags">
@@ -93,7 +98,12 @@
                   
                 </ul>  
             </div>
-              <p id="pbtn"><button class="sub" type="submit" onclick="buy()">buy</button></p>
+            <p id="pbtn"><button class="sub" type="submit" onclick="buy()">Buy</button></p>
+            </div>
+            
+            
+            
+              
             <!-- <button type="submit">Отправить</button> -->
         </form>
         <div id="thanks" class="divth2">
